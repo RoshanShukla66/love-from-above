@@ -41,6 +41,6 @@ start.addEventListener("click", () => {
             console.log("Audio Error:", error);
         });
 
-    }, 10000);
+    }, 11000);
 
 }, { once: true });
