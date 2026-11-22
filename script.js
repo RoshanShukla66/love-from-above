@@ -31,3 +31,16 @@ video.addEventListener("ended", () => {
 pause.addEventListener("click", () => {
     video.pause()
 })
+
+const audio = new Audio("./song.mpeg");
+
+start.addEventListener("click", () => {
+
+    setTimeout(() => {
+        audio.play().catch(error => {
+            console.log("Audio Error:", error);
+        });
+
+    }, 10000);
+
+}, { once: true });
