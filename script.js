@@ -1,6 +1,6 @@
 const store = document.querySelector(".store")
 
-const data = "my name is roshan shukla"
+const data = "my name is Shradha shukla"
 let index = 0;
 
 function run(){
