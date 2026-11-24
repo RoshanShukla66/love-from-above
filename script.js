@@ -13,34 +13,38 @@ function run(){
 }
 run()
 
-
-
-
 const start = document.querySelector(".start")
 const pause = document.querySelector(".pause")
 const video = document.querySelector(".video")
 
-//   start.addEventListener("click", () => {
-//     video.play()
-// })
 
+let firstTime = true
 
-      start.addEventListener("click", () => {
+start.addEventListener("click", () => {
+
+    if (firstTime) {
+        firstTime = false
+
         setTimeout(() => {
-    video.play()
-},4000)
+            video.play()
+        }, 4000)
+
+    } else {
+        video.play()
+    }
 
 })
+
 video.addEventListener("ended", () => {
-    
-        video.muted = true
-        video.loop = true
-         video.play()
+    video.muted = true
+    video.loop = true
+    video.play()
 })
 
 pause.addEventListener("click", () => {
     video.pause()
 })
+
 
 const audio = new Audio("./song.mpeg");
 
