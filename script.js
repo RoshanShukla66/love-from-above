@@ -1,6 +1,6 @@
 const store = document.querySelector(".store")
 
-const data = "my name is Shradha shukla"
+const data = "my name is shradha shukla"
 let index = 0;
 
 function run(){
@@ -13,14 +13,24 @@ function run(){
 }
 run()
 
+
+
+
 const start = document.querySelector(".start")
 const pause = document.querySelector(".pause")
 const video = document.querySelector(".video")
 
-  start.addEventListener("click", () => {
-    video.play()
-})
+//   start.addEventListener("click", () => {
+//     video.play()
+// })
 
+
+      start.addEventListener("click", () => {
+        setTimeout(() => {
+    video.play()
+},4000)
+
+})
 video.addEventListener("ended", () => {
     
         video.muted = true
@@ -41,6 +51,27 @@ start.addEventListener("click", () => {
             console.log("Audio Error:", error);
         });
 
-    }, 2000);
+    }, 6000);
 
 }, { once: true });
+
+
+const counter = document.querySelector(".counter")
+
+let started = false
+
+start.addEventListener("click", () => {
+
+    if(started) return
+    started = true
+
+    let count = 4
+   let alldata = setInterval(() => {
+        count--
+        counter.innerHTML = count
+        if(count === 0){
+            clearInterval(alldata)
+            counter.innerHTML = ""
+        }
+    },1000)
+})
