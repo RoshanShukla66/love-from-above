@@ -18,14 +18,14 @@
 
         <div class="buttons flex justify-between items-center my-2">
           <button
-            class="start font-medium text-sm cursor-pointe border-[#514637] rounded-xl px-5 py-2 ml-2 bg-[#C8AD78] text-[#100F0D] hover:bg-[#FF1493] hover:text-white hover:scale-105 hover:shadow-[0_0_15px_#FF1493] cursor-pointer "
+            class="start font-medium text-sm cursor-pointe border-[#514637] rounded-xl px-5 py-2 ml-2 bg-[#C8AD78] text-[#100F0D]  hover:scale-102 hover:shadow-[0_0_15px_#C8AD78] cursor-pointer "
           >
             Start▶️
           </button>
          <span class="inline-block text-3xl cursor-pointer hover:scale-125 transition duration-300"
          style="color: #ff4d8d;">♥</span>
           <button
-            class="pause cursor-pointe font-medium text-sm border-[#514637] px-5 py-2 mr-2 font-['Montserrat'] bg-[#242328] text-[#F4F0E8] rounded-xl hover:bg-[#FF1493] hover:text-white hover:scale-105 hover:shadow-[0_0_15px_#FF1493] transition-all duration-300"
+            class="pause cursor-pointe font-medium text-sm border-[#514637] px-5 py-2 mr-2 font-['Montserrat'] bg-[#242328] text-[#F4F0E8] rounded-xl  hover:scale-105 hover:shadow-[0_0_15px_#FF1493] "
           >
             Pause⏸️
           </button>
@@ -37,6 +37,11 @@
     </header>
 
     <main>
+
+      <div class="flex justify-center ">
+         <h1 class="counter text-9xl md:text-[180px] top-1/2 text-white font-extrabold font-sans tracking-wider select-none absolute"></h1>
+      </div>
+
       <video
         class="video w-full object-contain md:h-screen md:object-contain "
         playsinline
