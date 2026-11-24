@@ -60,7 +60,7 @@ start.addEventListener("click", () => {
 }, { once: true });
 
 
-const counter = document.querySelector(".counter")
+const counter = document.querySelector("#countnumber")
 
 let started = false
 
